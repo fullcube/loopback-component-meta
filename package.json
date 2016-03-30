@@ -1,0 +1,31 @@
+{
+  "name": "loopback-component-meta",
+  "version": "1.0.0",
+  "description": "LoopBack component for retrieving meta data about the API Models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/beeman/loopback-component-meta.git"
+  },
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "meta",
+    "metadata"
+  ],
+  "author": "Bram Borggreve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beeman/loopback-component-meta/issues"
+  },
+  "homepage": "https://github.com/beeman/loopback-component-meta#readme",
+  "dependencies": {
+    "debug": "2.2.0",
+    "lodash": "4.6.1",
+    "loopback": "2.27.0",
+    "loopback-datasource-juggler": "2.45.2"
+  }
+}

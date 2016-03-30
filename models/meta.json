@@ -1,0 +1,66 @@
+{
+  "name": "Meta",
+  "plural": "Meta",
+  "base": "Model",
+  "description": "Provide API metadata",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "methods": {
+    "getModels": {
+      "isStatic": true,
+      "accepts": [],
+      "returns": {
+        "arg": "result",
+        "type": "Object",
+        "root": true
+      },
+      "description": "Get all Models",
+      "http": {
+        "path": "/",
+        "verb": "get"
+      }
+    },
+    "getModelById": {
+      "isStatic": true,
+      "accepts": {
+        "arg": "name",
+        "type": "any",
+        "description": "Model name",
+        "required": true
+      },
+      "returns": {
+        "arg": "result",
+        "type": "Object",
+        "root": true
+      },
+      "description": "Get a Model by name",
+      "http": {
+        "path": "/:name",
+        "verb": "get"
+      }
+    },
+    "graphviz": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "res",
+          "type": "Object",
+          "description": "Response object",
+          "http": {
+            "source": "res"
+          }
+        }
+      ],
+      "description": "Get graphviz schema of all Models",
+      "http": {
+        "path": "/graphviz",
+        "verb": "get"
+      }
+    }
+  }
+}
