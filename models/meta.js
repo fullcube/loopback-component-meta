@@ -6,7 +6,7 @@ module.exports = function (Meta, options) {
   options = options || {}
 
   // This object holds the Model structure
-  Meta.structure = {}
+  Meta.structure = []
 
   /**
    * Method for building the Model structure
@@ -14,13 +14,13 @@ module.exports = function (Meta, options) {
   Meta.createStructure = function () {
     debug('createStructure: Building model structure')
     Object.keys(Meta.app.models)
-      .filter(modelName => {
+      .filter((modelName) => {
         return options.filter.indexOf(modelName) === -1
       })
       .sort()
-      .map(modelName => {
+      .map((modelName) => {
         debug('createStructure: ' + modelName)
-        Meta.structure[ modelName ] = getModelInfo(modelName)
+        Meta.structure.push(getModelInfo(modelName))
       })
   }
 
@@ -71,7 +71,9 @@ module.exports = function (Meta, options) {
     ]
 
     // Loop through the keys and add them to the result with their value
-    keys.forEach(key => result[ key ] = _.get(model.definition.settings, key))
+    keys.forEach((key) => {
+      result[ key ] = _.get(model.definition.settings, key)
+    })
     return result
   }
 
@@ -92,7 +94,7 @@ module.exports = function (Meta, options) {
   Meta.getModelById = function (modelName, cb) {
     cb = cb || utils.createPromiseCallback()
     process.nextTick(function () {
-      cb(null, Meta.structure[ modelName ])
+      cb(null, getModelInfo(modelName))
     })
     return cb.promise
   }
@@ -113,7 +115,7 @@ module.exports = function (Meta, options) {
     // List all the base models
     var bases = {}
     result.push('\t# Base models')
-    _.mapKeys(Meta.structure, (info) => {
+    Meta.structure.map((info) => {
       var baseModel = info[ 'base' ]
       if (!bases[ baseModel ]) {
         bases[ baseModel ] = true
@@ -124,7 +126,8 @@ module.exports = function (Meta, options) {
     // List all the models with the relation the the base
     result.push('\t# Models')
 
-    _.mapKeys(Meta.structure, (info, model) => {
+    Meta.structure.map((info) => {
+      var model = info['name']
       // The model itself
       result.push(`\t# Model ${model}`)
       result.push(`\t${model}`)
