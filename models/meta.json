@@ -16,7 +16,7 @@
       "accepts": [],
       "returns": {
         "arg": "result",
-        "type": "Object",
+        "type": [ "Object" ],
         "root": true
       },
       "description": "Get all Models",
