@@ -1,0 +1,27 @@
+{
+  "name": "BaseModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "ModifiedTimestamp": {}
+  },
+  "properties": {
+    "created": {
+      "type": "Date",
+      "description": "Created date.",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "Date",
+      "description": "Modified date.",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

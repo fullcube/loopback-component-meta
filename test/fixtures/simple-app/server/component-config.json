@@ -1,0 +1,21 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer"
+  },
+  "../../../..": {
+    "enableRest": true,
+    "filter": [
+      "ACL",
+      "AccessToken",
+      "RoleMapping",
+      "Role",
+      "User"
+    ],
+    "acls": [{
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    }]
+  }
+}

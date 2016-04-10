@@ -4,6 +4,7 @@
   "description": "LoopBack component for retrieving meta data about the API Models",
   "main": "index.js",
   "scripts": {
+    "simple-app": "node test/fixtures/simple-app/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +28,12 @@
     "lodash": "4.6.1",
     "loopback": "2.27.0",
     "loopback-datasource-juggler": "2.45.2"
+  },
+  "optionalDependencies": {
+    "loopback-component-explorer": "2.3.0"
+  },
+  "devDependencies": {
+    "bluebird": "3.3.4",
+    "loopback-boot": "2.18.0"
   }
 }
