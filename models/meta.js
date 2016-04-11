@@ -149,7 +149,7 @@ module.exports = function (Meta, options) {
 
     // Send the result to the client
     process.nextTick(function () {
-      res.type('text/plain');
+      res.type('text/plain')
       res.send(result)
     })
     return cb.promise
