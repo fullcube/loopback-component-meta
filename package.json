@@ -33,6 +33,7 @@
     "loopback-component-explorer": "2.3.0"
   },
   "devDependencies": {
+    "babel-cli": "6.9.0",
     "bluebird": "3.3.4",
     "chai": "3.5.0",
     "debug": "2.2.0",
