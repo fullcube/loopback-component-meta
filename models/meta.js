@@ -30,6 +30,7 @@ module.exports = function (Meta, options) {
   function formatProperties (properties) {
     const result = {}
     for (const key in properties) {
+      debug('formatProperties: key: ' + key)
       if (properties.hasOwnProperty(key)) {
         result[ key ] = _.clone(properties[ key ])
         result[ key ].type = properties[ key ].type.name
