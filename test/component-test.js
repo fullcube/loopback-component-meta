@@ -31,6 +31,25 @@ describe('Component test', function() {
           expect(res.acls).to.be.an('array')
           expect(res.mixins).to.be.an('object')
           expect(res.properties).to.be.an('object')
+          expect(res.properties.id).to.deep.equal({
+            id: 1,
+            type: 'Number',
+            generated: true,
+          })
+          expect(res.properties.name).to.deep.equal({
+            type: 'String',
+            required: true,
+          })
+          expect(res.properties.created).to.deep.equal({
+            type: 'Date',
+            description: 'Created date.',
+            defaultFn: 'now',
+          })
+          expect(res.properties.modified).to.deep.equal({
+            type: 'Date',
+            description: 'Modified date.',
+            defaultFn: 'now',
+          })
           expect(res.relations).to.be.an('object')
           expect(res.validations).to.be.an('array')
         })
