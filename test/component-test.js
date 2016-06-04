@@ -41,7 +41,7 @@ describe('Component test', function() {
         .then((res) = > {
           expect(res.properties).to.be.an('object')
           expect(res.properties.name).to.be.an('object')
-          expect(res.properties.id).to.be.an('array')
+          expect(res.properties.id).to.be.an('object')
       })
     })
 
