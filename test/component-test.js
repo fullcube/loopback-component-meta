@@ -35,6 +35,15 @@ describe('Component test', function() {
           expect(res.validations).to.be.an('array')
         })
     })
+    
+    it('should find all models fields', function () {
+      return Meta.getModelById('Category')
+        .then((res) = > {
+          expect(res.properties).to.be.an('object')
+          expect(res.properties.name).to.be.an('object')
+          expect(res.properties.id).to.be.an('array')
+      })
+    })
 
   })
 })
