@@ -1,5 +1,7 @@
 # loopback-component-meta
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fullcube/loopback-component-meta.svg)](https://greenkeeper.io/)
+
 [![CircleCI](https://circleci.com/gh/fullcube/loopback-component-meta.svg?style=svg)](https://circleci.com/gh/fullcube/loopback-component-meta) [![Dependencies](http://img.shields.io/david/fullcube/loopback-component-meta.svg?style=flat)](https://david-dm.org/fullcube/loopback-component-meta) [![Coverage Status](https://coveralls.io/repos/github/fullcube/loopback-component-meta/badge.svg?branch=master)](https://coveralls.io/github/fullcube/loopback-component-meta?branch=master)
 
 Component for [LoopBack](https://loopback.io) that adds a Meta model that can be used to retrieve meta data about the model definitions.
