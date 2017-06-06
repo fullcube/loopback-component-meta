@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/beeman/loopback-component-meta.git"
+    "url": "git+ssh://git@github.com/fullcube/loopback-component-meta.git"
   },
   "keywords": [
     "StrongLoop",
@@ -20,9 +20,9 @@
   "author": "Bram Borggreve",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beeman/loopback-component-meta/issues"
+    "url": "https://github.com/fullcube/loopback-component-meta/issues"
   },
-  "homepage": "https://github.com/beeman/loopback-component-meta#readme",
+  "homepage": "https://github.com/fullcube/loopback-component-meta#readme",
   "dependencies": {
     "debug": "2.2.0",
     "lodash": "4.17.4"
