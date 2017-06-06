@@ -12,7 +12,6 @@
   "relations": {},
   "methods": {
     "getModels": {
-      "isStatic": true,
       "accepts": [],
       "returns": {
         "arg": "result",
@@ -26,7 +25,6 @@
       }
     },
     "getModelById": {
-      "isStatic": true,
       "accepts": {
         "arg": "name",
         "type": "any",
@@ -45,7 +43,6 @@
       }
     },
     "graphviz": {
-      "isStatic": true,
       "accepts": [
         {
           "arg": "res",

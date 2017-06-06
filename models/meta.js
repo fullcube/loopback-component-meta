@@ -56,24 +56,24 @@ module.exports = function (Meta, options) {
     }
 
     // Get the following keys from the settings object, if they are set
-    const keys = [
-      'acls',
-      'base',
-      'description',
-      'hidden',
-      'idInjection',
-      'methods',
-      'mixins',
-      'persistUndefinedAsNull',
-      'plural',
-      'relations',
-      'strict',
-      'validations'
-    ]
+    const keys = {
+      'acls': [],
+      'base': '',
+      'description': '',
+      'hidden': [],
+      'idInjection': true,
+      'methods': {},
+      'mixins': {},
+      'persistUndefinedAsNull': false,
+      'plural': '',
+      'relations': {},
+      'strict': false,
+      'validations': [],
+    }
 
     // Loop through the keys and add them to the result with their value
-    keys.forEach((key) => {
-      result[ key ] = _.get(model.definition.settings, key)
+    Object.keys(keys).forEach(key => {
+      result[ key ] = _.get(model.definition.settings, key, keys[ key ])
     })
     return result
   }

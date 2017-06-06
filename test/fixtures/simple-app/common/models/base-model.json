@@ -5,9 +5,6 @@
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-    "ModifiedTimestamp": {}
-  },
   "properties": {
     "created": {
       "type": "Date",

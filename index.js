@@ -37,6 +37,13 @@ module.exports = function (app, options) {
     modelDefinition.acls = options.acls
   }
 
+  // Support for loopback 2.x.
+  if (app.loopback.version.startsWith(2)) {
+    Object.keys(modelDefinition.methods).forEach(method => {
+      modelDefinition.methods[method].isStatic = true
+    })
+  }
+
   const NewModel = dataSource.createModel(
     modelDefinition.name,
     modelDefinition.properties,

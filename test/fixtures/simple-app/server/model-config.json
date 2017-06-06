@@ -14,6 +14,7 @@
       "../../../../lib/mixins"
     ]
   },
+
   "AccessToken": {
     "dataSource": "db",
     "public": true
@@ -30,15 +31,16 @@
     "dataSource": "db",
     "public": true
   },
+  "User": {
+    "dataSource": "db",
+    "public": true
+  },
+
   "Category": {
     "dataSource": "db",
     "public": true
   },
   "Product": {
-    "dataSource": "db",
-    "public": true
-  },
-  "user": {
     "dataSource": "db",
     "public": true
   },

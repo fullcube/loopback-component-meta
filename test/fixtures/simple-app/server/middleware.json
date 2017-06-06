@@ -1,7 +1,6 @@
 {
   "initial:before": {
     "loopback#favicon": {},
-    "loopback#context": {},
     "loopback#token": {}
   },
   "session": {},
@@ -19,6 +18,6 @@
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "loopback#errorHandler": {}
+    "strong-error-handler": {}
   }
 }

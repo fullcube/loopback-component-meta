@@ -20,7 +20,7 @@ describe('Component test', function() {
       return Meta.getModels()
         .then((res) => {
           expect(res).to.be.an('array')
-          expect(res.length).to.equal(10)
+          expect(res.length).to.equal(9)
         })
     })
 
