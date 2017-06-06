@@ -27,20 +27,19 @@
   },
   "homepage": "https://github.com/fullcube/loopback-component-meta#readme",
   "dependencies": {
-    "debug": "2.2.0",
+    "debug": "2.6.8",
     "lodash": "4.17.4"
   },
   "devDependencies": {
     "@bubltechnology/customizable-commit-analyzer": "1.0.2-0",
-    "babel-cli": "6.9.0",
-    "bluebird": "3.3.4",
-    "chai": "3.5.0",
+    "bluebird": "3.5.0",
+    "chai": "4.0.2",
     "condition-circle": "1.5.0",
     "coveralls": "2.13.1",
     "loopback": "3.8.0",
-    "loopback-boot": "2.18.0",
-    "loopback-component-explorer": "2.3.0",
-    "mocha": "2.4.5",
+    "loopback-boot": "2.24.0",
+    "loopback-component-explorer": "4.2.0",
+    "mocha": "3.4.2",
     "nyc": "11.0.2",
     "semantic-release": "6.3.6",
     "strong-error-handler": "2.1.0"
