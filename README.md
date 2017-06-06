@@ -1,5 +1,7 @@
 # loopback-component-meta
 
+[![CircleCI](https://circleci.com/gh/fullcube/loopback-component-meta.svg?style=svg)](https://circleci.com/gh/fullcube/loopback-component-meta) [![Dependencies](http://img.shields.io/david/fullcube/loopback-component-meta.svg?style=flat)](https://david-dm.org/fullcube/loopback-component-meta) [![Coverage Status](https://coveralls.io/repos/github/fullcube/loopback-component-meta/badge.svg?branch=master)](https://coveralls.io/github/fullcube/loopback-component-meta?branch=master)
+
 Component for [LoopBack](https://loopback.io) that adds a Meta model that can be used to retrieve meta data about the model definitions.
 
 # Installation
@@ -7,7 +9,7 @@ Component for [LoopBack](https://loopback.io) that adds a Meta model that can be
 Install the module
 
     $ npm install --save loopback-component-meta
-    
+
 Configure the module in `server/component-config.json`
 
 ```
