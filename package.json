@@ -1,13 +1,14 @@
 {
   "name": "loopback-component-meta",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "LoopBack component for retrieving meta data about the API Models",
   "main": "index.js",
   "scripts": {
     "simple-app": "node test/fixtures/simple-app/server/server.js",
     "test": "nyc --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js",
     "test:watch": "npm run test -- -w",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -30,15 +31,37 @@
     "lodash": "4.17.4"
   },
   "devDependencies": {
+    "@bubltechnology/customizable-commit-analyzer": "1.0.2-0",
     "babel-cli": "6.9.0",
     "bluebird": "3.3.4",
     "chai": "3.5.0",
+    "condition-circle": "1.5.0",
     "coveralls": "2.13.1",
     "loopback": "3.8.0",
     "loopback-boot": "2.18.0",
     "loopback-component-explorer": "2.3.0",
     "mocha": "2.4.5",
     "nyc": "11.0.2",
+    "semantic-release": "6.3.6",
     "strong-error-handler": "2.1.0"
+  },
+  "config": {
+    "commitTypeMap": {
+      "feat": "minor",
+      "fix": "patch",
+      "docs": "patch",
+      "style": "patch",
+      "refactor": "patch",
+      "perf": "patch",
+      "test": "patch",
+      "build": "patch",
+      "ci": "patch",
+      "chore": "patch",
+      "revert": "patch"
+    }
+  },
+  "release": {
+    "verifyConditions": "condition-circle",
+    "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
   }
 }
