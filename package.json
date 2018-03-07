@@ -39,7 +39,7 @@
     "loopback": "3.8.0",
     "loopback-boot": "2.24.0",
     "loopback-component-explorer": "4.2.0",
-    "mocha": "3.4.2",
+    "mocha": "5.0.4",
     "nyc": "11.0.2",
     "semantic-release": "6.3.6",
     "strong-error-handler": "2.1.0"
