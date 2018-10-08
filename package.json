@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/fullcube/loopback-component-meta#readme",
   "dependencies": {
-    "debug": "2.6.8",
+    "debug": "4.1.0",
     "lodash": "4.17.4"
   },
   "devDependencies": {
