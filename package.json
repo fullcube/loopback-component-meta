@@ -28,7 +28,7 @@
   "homepage": "https://github.com/fullcube/loopback-component-meta#readme",
   "dependencies": {
     "debug": "2.6.8",
-    "lodash": "4.17.4"
+    "lodash": "4.17.12"
   },
   "devDependencies": {
     "@bubltechnology/customizable-commit-analyzer": "1.0.2-0",
