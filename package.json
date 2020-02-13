@@ -41,7 +41,7 @@
     "loopback-component-explorer": "4.2.0",
     "mocha": "3.4.2",
     "nyc": "11.0.2",
-    "semantic-release": "6.3.6",
+    "semantic-release": "17.0.3",
     "strong-error-handler": "2.1.0"
   },
   "config": {
